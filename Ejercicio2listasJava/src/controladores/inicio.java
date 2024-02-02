@@ -6,26 +6,43 @@ import java.util.Scanner;
 
 public class inicio {
 
-	public inicio() {
-		
-		Scanner sc = new Scanner(System.in);
-		List<Integer> listaNumeros;
-		listaNumeros= new ArrayList<Integer>();
-	
-		public void pedirNumero(List<Integer> listaNumeros){
-			System.out.println("Introduzca número entero");
-			int numeroIntroducido = sc.nextInt();
-			listaNumeros.add(numeroIntroducido);
-		}
-		bool introducir=false;
-		if(!introducir==)
-		
-		public void mostrarLista(List<Integer>ListaNumeros){
-			for ( Object num : listaNumeros) {
-				System.out.println(num);
-			}
+	public static void main(String[]args) {
+			Scanner sc = new Scanner(System.in);
+			List<Integer> listaNumeros;
+			listaNumeros = new ArrayList<Integer>();
 
+	public static void introducirNumeros(List<Integer> listaNumeros) {
+		Scanner sc = new Scanner(System.in);
+		int tamanio;
+		System.out.println("Introduzca la cantidad de elementos que desee añadir:");
+		tamanio = sc.nextInt();
+		for (int i = 0; i < tamanio; i++) {
+			System.out.println("Introduzca número entero");
+			listaNumeros.add(sc.nextInt());
 		}
-		
 	}
-}
+
+
+	public static void mostrarLista(List<Integer> listaNumeros) {
+	        
+	        System.out.println("Lista de numeros:");
+	        for(int numeros:listaNumeros) {
+	        System.out.println(numeros);}
+	        }
+
+	public static void intercambiarPosicion(List<Integer>listaNumeros) {
+	            if (listaNumeros.size()>=4) {
+	                int aux=listaNumeros.get(1);
+	                listaNumeros.set(1, listaNumeros.get(3));
+	                listaNumeros.set(3,  aux);
+	            }
+	        }
+
+	public static void listaModificada(List<Integer>listaNumeros) {
+	        	System.out.println("Lista modificada:");
+	        	for(int i =0; i<listaNumeros.size();i++) {
+	        		System.out.println(i + ":" + listaNumeros.get(i));
+	        	}
+	        }
+	}
+	
