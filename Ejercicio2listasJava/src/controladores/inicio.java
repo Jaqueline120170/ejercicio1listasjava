@@ -9,7 +9,7 @@ public class inicio {
 	public static void main(String[]args) {
 			Scanner sc = new Scanner(System.in);
 			List<Integer> listaNumeros;
-			listaNumeros = new ArrayList<Integer>();
+			listaNumeros = new ArrayList<Integer>();}
 
 	public static void introducirNumeros(List<Integer> listaNumeros) {
 		Scanner sc = new Scanner(System.in);
